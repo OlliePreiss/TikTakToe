@@ -1,0 +1,153 @@
+.header {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 25px;
+}
+
+/* BODY */
+
+.body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.game-container {
+  border: 1px solid #004225;
+  border-radius: 10px;
+  width: min(500px, 100%);
+  box-shadow: 0 15px 35px 0 rgb(226, 226, 226);
+}
+
+.select-symbol-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.symbol-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.select-symbol-header {
+  text-align: center;
+  color: grey;
+}
+
+.symbol {
+  width: 200px;
+  height: 2rem;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  color: #bebebe;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.symbol:hover {
+  cursor: pointer;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);;
+}
+
+.selected {
+  border: 2px solid #004225;
+  color: #004225;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px;
+  justify-content: center;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+.grid-square {
+  border: 1px solid white;
+  background-color: #004225;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.grid-square:hover {
+  background-color: #004225e3;
+}
+
+#result-container {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #004225;
+}
+
+.restart-container {
+  display: flex;
+  justify-content: center;
+}
+
+#restart-button {
+  height: 2rem;
+  color: #bebebe;
+  background-color: white;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 16px;
+}
+
+#restart-button:hover {
+  color: #004225;
+}
+
+@media all and (max-width: 520px) {
+  .game-container {
+    border: 0px;
+    border-radius: 10px;
+    width: min(500px, 100%);
+    box-shadow: 0 0px 0px 0;
+  }
+
+  .symbol {
+    width: 150px;
+    height: 3rem;
+  }
+
+}
+
+/* FOOTER */
+
+.footer {
+  height: 50px;
+  line-height: 50px;
+  margin: 0px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer h5 {
+  padding: 0px;
+  margin: 0px;
+}
